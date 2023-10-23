@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fancy Shop</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <!-- header secttion  -->
+    <header>
+        <!-- nav  -->
+        <div class="nav" id="navbar">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    JoGeek
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check" onclick="blurFunc()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="#" >Home</a>
+                <a href="#about-link" >About</a>
+                <a href="#products-link" >Products</a>
+                <a href="#map-link" >Map</a>
+                <a href="#contact-link" >Contact</a>
+            </div>
+        </div>
+        <!-- nav end  -->
+
+        <div class="header-section">
+            
+                <img src="images/rtv1fw4v.bmp" alt="Your Image" class="image">
+                
+                <div class="shade"></div>
+           
+                <div class="header-content">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Explore our amazing content and services.</p>
+                    <a href="#about-link" class="read-more-button">Read More</a>
+                </div>
+            
+        </div>
+    </header>
+    <!-- header section end  -->
+
+    <!-- main  -->
+    <main class="main-container" id="blurbody">
+
+
+
+        <section class="about-section" id="about-link">
+            <div class="container">
+                <h2>About&nbsp;<span> Us</span></h2>
+                <p>Welcome to My Fancy Shop, your one-stop destination for all things fancy! We are committed to
+                    providing you with the finest selection of fancy products, from elegant dresses to stylish shoes and
+                    high-tech electronics.</p>
+                <p>At My Fancy Shop, we believe in quality, style, and affordability. Our team of experts carefully
+                    curates each product to ensure that you receive the best. Whether you're looking to elevate your
+                    wardrobe, accessorize your home, or find the perfect gift, we've got you covered.</p>
+                <div class="detials">
+                    <h3>Shop Details</h3>
+                    <ul>
+                        <li>Location: 123 Fancy Street, City</li>
+                        <li>Operating Hours: Mon - Fri: 9:00 AM - 7:00 PM, Sat - Sun: 10:00 AM - 6:00 PM</li>
+                        <li>Contact: contact@myfancyshop.com</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="products-link">
+            <h2>Featured Products</h2>
+            <div class="product-categories">
+                <button class="category-button" data-filter="all">All</button>
+                <button class="category-button" data-filter="toys">Toys</button>
+                <button class="category-button" data-filter="chappals">Chappals</button>
+                <button class="category-button" data-filter="shoes">Shoes</button>
+                <button class="category-button" data-filter="dresses">Dresses</button>
+                <button class="category-button" data-filter="electronics">Electronics</button>
+            </div>
+            <div class="products item-display">
+                <!-- Product listings -->
+                <div class="product" data-category="toys">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KsnRO78yT9S-WTm24-fzziAJ6c4_X0xZ9Q&usqp=CAU" alt="Toy 1">
+                    <h3>Toy 1</h3>
+                    <p>Price: $20</p>
+                </div>
+                <div class="product" data-category="toys">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KsnRO78yT9S-WTm24-fzziAJ6c4_X0xZ9Q&usqp=CAU" alt="Toy 2">
+                    <h3>Toy 2</h3>
+                    <p>Price: $25</p>
+                </div>
+
+                <div class="product" data-category="chappals">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhZ9tuTaMr-kkKEyta5NJDlyMhTv_MtY6h6gbmobqoOLLSxTV3XCHgDcjqP6PUYBlb44&usqp=CAU" alt="Chappal 1">
+                    <h3>Chappal 1</h3>
+                    <p>Price: $30</p>
+                </div>
+
+                <div class="product" data-category="shoes">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhZ9tuTaMr-kkKEyta5NJDlyMhTv_MtY6h6gbmobqoOLLSxTV3XCHgDcjqP6PUYBlb44&usqp=CAU" alt="Shoes 1">
+                    <h3>Shoes 1</h3>
+                    <p>Price: $50</p>
+                </div>
+
+                <div class="product" data-category="dresses">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhZ9tuTaMr-kkKEyta5NJDlyMhTv_MtY6h6gbmobqoOLLSxTV3XCHgDcjqP6PUYBlb44&usqp=CAU" alt="Dress 1">
+                    <h3>Dress 1</h3>
+                    <p>Price: $40</p>
+                </div>
+
+                <div class="product " data-category="electronics">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhZ9tuTaMr-kkKEyta5NJDlyMhTv_MtY6h6gbmobqoOLLSxTV3XCHgDcjqP6PUYBlb44&usqp=CAU" alt="Electronics 1">
+                    <h3>Electronics 1</h3>
+                    <p>Price: $100</p>
+                </div>
+
+
+                <!-- Add more product listings for other categories -->
+            </div>
+        </section>
+
+        <!-- <section class="faq-section">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>How can I place an order?</h3>
+                    <p>You can place an order by visiting our product page, selecting the items you want, and then
+                        clicking on the "Add to Cart" button. Follow the checkout process to complete your purchase.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept various payment methods, including credit cards, PayPal, and more. You can choose your
+                        preferred payment option during the checkout process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long will it take to receive my order?</h3>
+                    <p>Delivery times may vary depending on your location and the shipping method you choose. We provide
+                        estimated delivery times during the checkout process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer returns and exchanges?</h3>
+                    <p>Yes, we offer a hassle-free returns and exchanges process. If you're not satisfied with your
+                        purchase, please contact our customer support within 30 days of receiving your order.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="location-map" id="map-link">
+            <style>
+                /* Style for the map container */
+                #map-container {
+                    width: 100%;
+                    height: 400px;
+                    /* Adjust the height as needed */
+                }
+            </style>
+            
+
+          
+                <h2> Location <span>Map</span> </h2>
+                <p>Here's a map displaying the location of Digital:</p>
+
+                <!-- Create a map container div -->
+                <div id="map-container">
+                    <!-- You can embed a Google Map or another map service's iframe here -->
+                    <!-- For Google Maps, you'll need an API key -->
+                    <!-- Example: -->
+                    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.755032993756!2d76.06289437476869!3d10.981853855371483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b5524933c4cd%3A0x60705afae5f6304c!2sBraitenx!5e0!3m2!1sen!2sin!4v1697957632442!5m2!1sen!2sin"></iframe>
+                </div>
+            
+        </section>
+
+
+        <section class="contact-section" id="contact-link">
+            <div class="container">
+                <h2>Contact <span>Us</span></h2>
+                <p>Have a question or need assistance? Feel free to get in touch with us. We're here to help you!</p>
+                <div class="contact-form">
+                    <form action="/" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                        <label for="Mobile">Mobile</label>
+                        <input type="number" id="Mobile" name="Mobile" placeholder="Your Mobile Number" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+               
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-link">About Us</a></li>
+                        <li><a href="#products-link">Products</a></li>
+                        <li><a href="#contact-link">Contact Us</a></li>
+                        <li><a href="#map-link">Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-featured">
+                    <h3>Featured Items</h3>
+                    <ul>
+                        <li><a href="#products-link" class="category-button" data-filter="toys">toys</a></li>
+                        <li><a href="#products-link"  class="category-button" data-filter="chappals">chappals</a></li>
+                        <li><a href="#products-link" class="category-button" data-filter="shoes">shoes</a></li>
+                        <li><a href="#products-link" class="category-button" data-filter="dresses">dresses</a></li>
+                        <li><a href="#products-link" class="category-button" data-filter="electronics">Electronics</a></li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@myfancyshop.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Fancy Street, City</p>
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 <span><a href="http://braitenx.com">Braitenx</a></span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
